@@ -9,8 +9,10 @@ from google.colab.patches import cv2_imshow
 
 colorcodes = {}
 
+# Pretrained model
 model = hub.load("https://www.kaggle.com/models/google/faster-rcnn-inception-resnet-v2/TensorFlow1/faster-rcnn-openimages-v4-inception-resnet-v2/1").signatures['default']
 
+# Deciding the size, color and text of boxes 
 def drawbox(image,ymin,xmin,ymax,xmax,namewithscore,color):
     im_height, im_width, _  = image.shape
     left,top,right,bottom = int(xmin*im_width), int(ymin*im_height), int(xmax*im_width),int(ymax*im_height)
@@ -38,6 +40,7 @@ def drawbox(image,ymin,xmin,ymax,xmax,namewithscore,color):
         color = (255,255,255)
     )
 
+# Drawing boxes for object with different color
 def draw(image,boxes,classnames,scores):
     boxesidx = tf.image.non_max_suppression(boxes,scores,max_output_size = 10, iou_threshold = 0.5,score_threshold = 0.1)
     for i in boxesidx:
@@ -56,6 +59,7 @@ def draw(image,boxes,classnames,scores):
 
     return image
 
+# Image read, resize and converting into color
 image = cv2.imread("image2.jpg")
 image = cv2.resize(image,(800,600))
 image2 = cv2.cvtColor(image,cv2.COLOR_BGR2RGB)
