@@ -1,6 +1,6 @@
 # Object Detection and Prediction
 
-This project implements various object detection and prediction models using Python. It includes real-time object detection, image classification, and basic neural network implementations for computer vision tasks.
+This project implements various object detection and prediction models using Python. It includes real-time object detection, image classification and basic neural network implementations for computer vision tasks.
 
 ## Features
 
@@ -19,5 +19,13 @@ This project implements various object detection and prediction models using Pyt
 
 - Python 3.6 or above  
 - OpenCV  
-- TensorFlow / PyTorch (depending on your model)  
+- TensorFlow
 - NumPy, Matplotlib
+
+# Installation
+
+1. git clone https://github.com/priyangbhimani01/Object_Detection_and_Prediction.git
+
+2. Install Necessary libraries
+
+3. Run script
