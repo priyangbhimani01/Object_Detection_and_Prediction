@@ -11,9 +11,9 @@ This project implements various object detection and prediction models using Pyt
 
 ## Project Structure
 
-- `Real_time_object_detection_for_Image.py` — Real-time object detection using OpenCV and pretrained models  
-- `Object_Prediction_for_Image_classification.py` — Image classification with neural networks  
-- `Basic_Neural_Network.py` — Simple neural network implementation
+- `Real_time_object_detection_for_Image.py` - Real-time object detection using OpenCV and pretrained models  
+- `Object_Prediction_for_Image_classification.py` - Image classification with neural networks  
+- `Basic_Neural_Network.py` - Simple neural network implementation
 - 
 ## Requirements
 
